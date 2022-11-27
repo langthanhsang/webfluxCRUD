@@ -47,4 +47,20 @@ public class ProductController {
         productService.deleteProduct(id);
     }
 
+
+//    @PutMapping("/user/{id}")
+//    private Mono<User> updateUser(@PathVariable("id") Long id,
+//                                  @RequestBody User user) {
+//        return repository.findById(id).flatMap(user1 -> {
+//            user.setId(id);
+//            return repository.save(user);
+//        }).switchIfEmpty(Mono.empty());
+//    }
+//
+//    @DeleteMapping("/user/{id}")
+//    Mono<Void> deleteById(@PathVariable("id") Long id) {
+//        return repository.findById(id).flatMap(p ->
+//                repository.deleteById(p.getId()));
+//    }
+
 }
